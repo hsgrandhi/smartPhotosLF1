@@ -6,7 +6,7 @@ from elasticsearch import Elasticsearch, RequestsHttpConnection
 import time
 
 # To test this function - upload any .jpeg or .png image into the photostoragebucket1 bucket in s3, which triggers the lambda function to be executed
-# check pipeline
+# Nagas Demo
 def lambda_handler(event, context):
     # # # # index_photos_debug()
     # get_indices()
