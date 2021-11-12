@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - aws cloudformation package --template-file template.yaml --s3-bucket smartphotofrontend --output-template-file packaged.yaml
+artifacts:
+  type: zip
+  files:
+    - "packaged.yaml"
+  discard-paths: yes
